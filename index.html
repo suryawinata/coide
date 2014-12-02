@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>Angular Demo</title>
     <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <script>
 
-    </script>
+    <div ng-controller="MyController">
+        <h1>{{artist.name}}</h1>
+        <p>{{artist.title + ', ' + artist.company}}</p>
+    </div>
 </body>
 </html>
